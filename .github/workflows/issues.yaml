@@ -9,7 +9,7 @@ jobs:
     name: Add issue to project
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@v2.2.0
+      - uses: peter-evans/find-issues@v1
         with:
           project-url: https://github.com/orgs/Rivnam-Manvir/projects/1
           github-token: ${{ secrets.GITHUB_TOKEN }}
