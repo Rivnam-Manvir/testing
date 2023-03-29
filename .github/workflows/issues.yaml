@@ -16,4 +16,4 @@ jobs:
         uses: srggrs/assign-one-project-github-action@1.2.1
         if: github.event.action == 'opened'
         with:
-          project-url: https://github.com/orgs/Rivnam-Manvir/projects/1
+          project: 'https://github.com/orgs/Rivnam-Manvir/projects/1'
