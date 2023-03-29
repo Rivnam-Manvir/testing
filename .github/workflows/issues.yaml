@@ -4,13 +4,16 @@ on:
   issues:
     types: [opened]
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
-  add-to-project:
-    name: Add issue to project
+  assign_one_project:
+    name: Assign to One Project
     runs-on: ubuntu-latest
     steps:
-      - uses: srggrs/assign-one-project-github-action@1.2.1
+      - name: Assign new issues to project 
+        uses: srggrs/assign-one-project-github-action@1.2.1
         if: github.event.action == 'opened'
         with:
           project-url: https://github.com/orgs/Rivnam-Manvir/projects/1
-          github-token: ${{ secrets.GITHUB_TOKEN }}
