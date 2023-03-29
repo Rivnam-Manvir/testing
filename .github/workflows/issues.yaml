@@ -9,7 +9,6 @@ env:
 
 jobs:
   assign_one_project:
-    name: Assign to One Project
     runs-on: ubuntu-latest
     steps:
       - uses: srggrs/assign-one-project-github-action@1.2.1
